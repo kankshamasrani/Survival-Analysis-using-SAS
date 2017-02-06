@@ -2,9 +2,9 @@
 Checking Attrition rate with respect to each covariate*/
 
 *Define Permanent Library;
-LIBNAME Lib "P:\OPIM5894\Library";
+LIBNAME Lib "<File path to hold docs created or modified in following session>";
 DATA Lib.raw1;
-INFILE "P:\OPIM5894\Library\fermalogis.csv" DLM=',' MISSOVER DSD firstobs=2  ;
+INFILE "<File path cointaining dataset" DLM=',' MISSOVER DSD firstobs=2  ;
 INPUT X Obsv Age Attr $  Bsns_Trvl $ DailyRate Dpt $ DistFrmHome 
 Educ EducField $ EmployeeCount EmployeeId EnvtSatisfctn 
 Gender $ HrlyRate JobInvlvmnt JobLevel JobRole $ JobSatisfctn Marital_St $ 
